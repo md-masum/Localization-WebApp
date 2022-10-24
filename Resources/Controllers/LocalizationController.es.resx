@@ -120,4 +120,7 @@
   <data name="Greeting" xml:space="preserve">
     <value>Hola! ¡Estamos aprendiendo sobre localización</value>
   </data>
+  <data name="HtmlMessage" xml:space="preserve">
+    <value>&lt;h6&gt;Hola! ¡Estamos aprendiendo sobre localización&lt;/h6&gt;</value>
+  </data>
 </root>

@@ -120,4 +120,7 @@
   <data name="Greeting" xml:space="preserve">
     <value>Hello! We are learning about localization</value>
   </data>
+  <data name="HtmlMessage" xml:space="preserve">
+    <value>&lt;h6&gt;Hello this is test HTML&lt;/h6&gt;</value>
+  </data>
 </root>
