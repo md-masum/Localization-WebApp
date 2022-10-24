@@ -1,5 +1,6 @@
 ﻿using Localization.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Localization;
 using System.Diagnostics;
 
 namespace Localization.Controllers
