@@ -20,5 +20,10 @@ namespace Localization.Controllers
             ViewData["HtmlMessage"] = _htmlLocalizer["HtmlMessage"];
             return View();
         }
+
+        public IActionResult LocalizedView()
+        {
+            return View();
+        }
     }
 }
