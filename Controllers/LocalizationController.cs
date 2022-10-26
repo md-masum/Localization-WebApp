@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Localization.Models;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Localization;
 using Microsoft.Extensions.Localization;
 
@@ -23,6 +24,23 @@ namespace Localization.Controllers
 
         public IActionResult LocalizedView()
         {
+            return View();
+        }
+
+        public IActionResult DataAnnotationView([FromQuery] string culture)
+        {
+            ViewData["culture"] = culture;
+            return View();
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult DataAnnotationView(PersonViewModel personViewModel, [FromQuery] string culture)
+        {
+            ViewData["culture"] = culture;
+            if (!ModelState.IsValid)
+            {
+                return View();
+            }
             return View();
         }
     }
